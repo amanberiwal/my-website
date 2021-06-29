@@ -1,0 +1,13 @@
+//TODO: Similar one is used for projects in RenderProjectCards, Make it common
+.loaderContainer {
+  height: 60vh;
+}
+
+.pageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 100px;
+}

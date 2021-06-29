@@ -1,0 +1,14 @@
+.root {
+  display: "flex";
+}
+
+.drawerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 25px;
+}
+.drawerWrapper .firstDiv {
+  justify-content: center;
+}

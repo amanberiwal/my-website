@@ -1,0 +1,133 @@
+.eventContainer {
+	display: flex;
+	background-color: #daebff79;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 8px;
+}
+
+.eventCards {
+	overflow-x: scroll;
+	max-width: 100%;
+	padding-bottom: 2%;
+	flex: 80; //Remove try
+	/* width */
+	&::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+		cursor: pointer;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #daebff79;
+		box-shadow: inset 0 0 5px #daebff79;
+		border-radius: 5px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #0d35a24d;
+		border-radius: 5px;
+
+		&:hover {
+			background: #0d34a2;
+		}
+	}
+}
+
+.eventManage {
+	flex: 20;
+	flex-direction: column;
+	margin-left: 2vw;
+}
+
+.eventSummaryCard {
+	flex: 70;
+	// padding-bottom: 10px;
+}
+
+.eventCreatorCard {
+	flex: 30;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.875rem;
+		// align-items: center;
+}
+
+.paperInfo {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-width: 8rem;
+	height: 7rem;
+	margin-right: 2rem;
+	background-color: white;
+	border-radius: 8px;
+	padding-left: 0.8rem;
+
+	transition: transform 0.15s ease-in-out;
+	&:hover {
+		transform: scale3d(1.02, 1.02, 1);
+	}
+
+	.projectName {
+		font-size: 0.75rem;
+		font-weight: 500;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.projectVenue {
+		font-size: 0.75rem;
+		font-weight: 500;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+
+.eventSummary {
+	border-radius: 10px;
+	// padding: 10px;
+	background-color: #eef5ff;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.75rem;
+}
+.eventCardHeader {
+	// 	padding-bottom: 0;
+	// 	margin-bottom: 0;
+}
+
+.eventCardHeaderText {
+	font-size: 0.75rem;
+}
+.paperEventCreator {
+	cursor: pointer;
+	display: flex;
+	position: relative;
+	width: 13vw;
+	background-color: #0d34a2;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		margin-right: 1rem;
+		color: white;
+		font-weight: 600;
+	}
+	svg {
+		fill: white;
+	}
+	&:active {
+		bottom: -6px;
+	}
+}
+
+.eventTitleTextField {
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,49 @@
+.menuContainer {
+	border-radius: 20px;
+}
+
+.card {
+	z-index: 1;
+	position: relative;
+	border-radius: 1rem;
+	transition: 0.4s;
+	height: 100%;
+	&:active {
+		bottom: -6px;
+	}
+}
+
+.cardContent {
+	cursor: pointer;
+	padding: 0 1rem;
+	overflow-y: scroll;
+	max-height: 40vh;
+
+	/* width */
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #feffda79;
+		box-shadow: inset 0 0 5px #feffda79;
+		border-radius: 5px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #0d35a24d;
+		border-radius: 5px;
+
+		&:hover {
+			background: #0d34a2;
+		}
+	}
+}
+
+.cardTitle {
+	text-align: center;
+	font-size: 1.2rem; // originally 1, did 1.2 for dashboard
+	font-weight: 600;
+}

@@ -1,0 +1,13 @@
+.pointer {
+	cursor: pointer;
+}
+
+.eventTitleTextField {
+	margin-bottom: 1rem;
+}
+
+.delete {
+	&:hover {
+		color: rgb(250, 80, 50);
+	}
+}

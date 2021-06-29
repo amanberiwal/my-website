@@ -1,0 +1,16 @@
+$containerMargin: 3rem;
+$imageWidth: 50vw;
+$marginTopLink: 0.6rem;
+
+@mixin loginHeader {
+	font-family: 'sacramento', cursive;
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+@mixin navigateLink {
+	margin-top: $marginTopLink;
+	font-size: 0.6rem !important;
+	align-self: flex-end;
+}

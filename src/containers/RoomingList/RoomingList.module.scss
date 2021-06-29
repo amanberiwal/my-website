@@ -1,0 +1,46 @@
+//TODO: Similar one is used for projects in RenderProjectCards, Make it common
+.loaderContainer {
+	height: 60vh;
+}
+
+.pageContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: center;
+	margin-left: 100px;
+}
+
+//Same used in Dashboard.module.scss
+.allGridContainer {
+	flex-wrap: nowrap;
+}
+
+.roomingTable {
+	width: 150vw;
+	height: 110vh;
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #fff;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #a42167;
+		border-radius: 10px;
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: #707070;
+	}
+}
+
+//TODO: Scroll design to be made common

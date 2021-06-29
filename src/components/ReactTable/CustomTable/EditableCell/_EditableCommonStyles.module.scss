@@ -1,0 +1,9 @@
+.textFieldUnderline {
+	&::before {
+		border-bottom: none;
+	}
+}
+
+.textFieldWidth {
+	min-width: 2rem;
+}

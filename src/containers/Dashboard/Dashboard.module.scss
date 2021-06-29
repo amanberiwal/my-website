@@ -1,0 +1,41 @@
+.dayHeading {
+	color: #555555;
+	margin-left: 2rem;
+}
+
+.teamHeading {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.teamAvatarGroup {
+	display: flex;
+	h5 {
+		margin-right: 2rem;
+	}
+}
+.text{
+	width: 30px;
+	height: 30px;
+}
+
+// .guestCardGrid {
+// 	flex-grow: 1;
+// }
+
+// .todoCardGrid {
+// 	flex-grow: 6;
+// }
+
+// .leftCardComponent {
+// 	max-width: 50vw;
+// }
+
+// .rightCardComponent {
+// 	flex-grow: 1;
+// }
+
+.calendarContainer {
+	margin-left: 0.7rem;
+	flex-grow: 1;
+}

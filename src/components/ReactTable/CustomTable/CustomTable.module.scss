@@ -1,0 +1,53 @@
+.tableContainer {
+	//Code for scroll bar x-axis
+	&::-webkit-scrollbar {
+		height: 5px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #fff;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #a42167;
+		border-radius: 10px;
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: #707070;
+	}
+}
+
+.randomShit{
+	color: #A52266;
+	padding-left: 5px;
+	font-size: larger;
+}
+.tableRowCell {
+	background: white;
+}
+
+input {
+	min-width: 4rem;
+}
+
+.groupCell {
+	cursor: pointer;
+	background-color: white;
+	text-align: center;
+}
+
+.aggregatedCell {
+	background-color: white;
+}
+
+.placeholderCell {
+	background-color: white;
+}
+
+.defaultCell {
+	background-color: rgba(175, 140, 140, 0.13);
+}

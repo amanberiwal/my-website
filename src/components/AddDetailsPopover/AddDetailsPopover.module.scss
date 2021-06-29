@@ -1,0 +1,25 @@
+.popover {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.saveButton {
+		align-self: center;
+		width: 10vw;
+		margin: 2rem auto 1rem;
+	}
+}
+
+.popoverHeader {
+	background-color: #a42167;
+	display: flex;
+	align-items: center;
+	p {
+		color: #ffff;
+		font-weight: 600;
+		padding: 0.4rem;
+	}
+}
+
+.circleColor {
+	color: #fff;
+}

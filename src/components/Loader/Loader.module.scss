@@ -1,0 +1,67 @@
+@mixin pencil($size, $top: 0) {
+  position: absolute;
+  width: $size;
+  top: $top;
+  transform: translateY(-135px) translateX(-2px);
+  animation: animatePencil 5s linear infinite;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.line {
+  position: relative;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #a42167;
+  animation: animate 5s linear infinite;
+}
+
+.pencil[data-size="150px"] {
+  @include pencil(150px);
+}
+
+.pencil[data-size="50px"] {
+  @include pencil(50px, 95px);
+}
+
+@keyframes animate {
+  0% {
+    width: 0px;
+  }
+  40% {
+    width: 350px;
+  }
+  50% {
+    width: 350px;
+  }
+  90% {
+    width: 0px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes animatePencil {
+  0% {
+    transform: translateY(-135px) translateX(-2px) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-135px) translateX(-2px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-134px) translateX(-114px) rotate(90deg);
+  }
+  90% {
+    transform: translateY(-134px) translateX(-114px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(-135px) translateX(-2px) rotate(0deg);
+  }
+}
+
+.ant-spin-dot-item {
+  background-color: red !important;
+}

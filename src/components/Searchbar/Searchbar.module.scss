@@ -1,0 +1,14 @@
+.paper {
+	display: flex;
+	align-items: center;
+	// background-color: #f7f7f7 !important;
+	min-width: 30vw;
+	height: 2.5vw;
+	box-shadow: none !important;
+	border-radius: 10;
+	border: 1px solid rgb(175, 174, 174);
+	// border: ;
+	svg {
+		margin-right: 1rem;
+	}
+}

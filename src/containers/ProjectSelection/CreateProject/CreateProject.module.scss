@@ -1,0 +1,150 @@
+
+
+.subTitle {
+	// margin-left: 1.5rem;
+	padding-top: 30px;
+	// padding-bottom: 10px;
+	font-weight: 500;
+	// color: black;
+	font-size: 1.125rem;
+}
+
+.input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 15vw;
+	height: 50px;
+	border-radius: 12px;
+	//Don't use REM because of MUI using px in margin for datePicker component
+}
+
+.button {
+	margin: 2rem auto;
+}
+
+.teamContainer {
+	height: 25vh;
+	overflow-y: scroll;
+}
+
+.dialogMain{
+	display: flex;
+	width: 700px;
+}
+
+.title {
+	// margin-left: 1.5rem;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	background-color: #a52266;
+	// font-size: 1.5rem;
+	font-weight: 400;
+	
+}
+
+.dialogHeaderTabs{
+	display:flex;
+	width: 700px;
+}
+
+.dialogTab{
+	// width: 30vh;
+}
+
+.dialogContent{
+	width: 25vh;
+	display: flex;
+}
+
+
+
+
+.formContent{
+	// padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	overflow: none;
+	width: 700px;
+	height:450px;
+
+
+	
+	
+	padding-bottom: 10px;
+	
+}
+
+.projectInput{
+margin-top: 10px;
+width: 35vh;
+// font-size: 10rem;
+
+
+
+
+
+
+}
+.projectInputTwo{
+	margin-top: 10px;
+	// width: 30vh;
+	
+	
+	
+	
+	
+	}
+	.projectInputManager{
+		margin-top: 10px;
+		width: 35vh;
+		padding-top: 20px;
+		
+		
+		
+		
+		}
+
+.vSplitHeader{
+	display: flex;
+	
+	flex-direction: row;
+
+}
+.vSplit{
+	display: flex;
+	flex-direction: column;
+	padding-right: 20px;
+	width: 50%;
+
+}
+.vSplit2{
+	display: flex;
+	flex-direction: column;
+	padding-right: 20px;
+	
+	padding-top: 30px;
+
+}
+
+.buttonSection{
+	display: flex;
+
+	padding-top: 60px;
+	padding-bottom: 10px;
+	
+	
+	// background-color: blue;
+	align-items: center;
+  justify-content: center;
+
+
+}
+.confirmButton{
+	
+	width: 100px;
+	// padding-top: 10px;
+	border-radius: 11px;
+}
+

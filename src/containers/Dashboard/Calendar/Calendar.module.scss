@@ -1,0 +1,204 @@
+/* VARIABLES */
+
+:root {
+	--main-color: #1a8fff;
+	--text-color: #777;
+	--text-color-light: #ccc;
+	--border-color: #eee;
+	// --bg-color: #f9f9f9;
+	--neutral-color: #fff;
+	--calendar-calor: #f5f5f5;
+}
+
+.eventPopover {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	.saveButton {
+		align-self: center;
+		width: 10vw;
+		margin: 2rem auto 1rem;
+	}
+}
+
+//TODO: Same as eventPopover in todolist and other modal compo of dashboard
+.calendarHeader {
+	width: 100%;
+	height: 6vh;
+	background-color: #a42167;
+	display: flex;
+	align-items: center;
+	border-radius: 0.5rem;
+	justify-content: space-between;
+	p {
+		color: #ffff;
+		font-weight: 500;
+		padding: 0.4rem;
+		font-size: 0.875rem;
+	}
+}
+
+.chevronIcon {
+	svg {
+		fill: #fff;
+	}
+}
+
+.projectButton {
+	button {
+		min-width: auto;
+	}
+	span {
+		margin: 0.3rem 1rem 1rem;
+		font-size: 0.75rem;
+		font-weight: 500;
+	}
+}
+
+.weekText {
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+/* Calendar */
+
+.calendar {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 4rem;
+	position: relative;
+	width: 100%;
+
+	background: var(--neutral-color);
+
+	// border: 1px solid var(--border-color);
+	background-color: var(--calendar-calor);
+
+	height: 100%;
+	padding-right: 0.7rem;
+	padding-top: 0.7rem;
+	padding-left: 0.7rem;
+	// padding-bottom: 0.5rem;
+
+	border-radius: 0.8rem;
+}
+
+.calendarBody {
+	margin-top:0.6rem;
+	border-radius: 10px;
+}
+
+.calendarEventCardContainer {
+	margin-top: 0.5rem;
+	border-radius: 0.5rem;
+	background-color: var(--calendar-calor);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 80vh;
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+		cursor: pointer;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #daebff79;
+		box-shadow: inset 0 0 5px #daebff79;
+		border-radius: 5px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #a42167;
+		border-radius: 5px;
+
+		&:hover {
+			background: #a4216793;
+		}
+	}
+}
+
+// .taskBody:hover {
+// 	// background: var(--bg-color);
+// 	background-color: #cc368482;
+// 	transition: 0.5s ease-out;
+// 	transform: scale3d(1.5, 1.5, 1)
+
+// }
+
+.calendar .cell {
+	position: relative;
+	height: 2rem;
+	width: 2.5rem;
+	// border-right: 1px solid var(--border-color);
+	overflow: hidden;
+	cursor: pointer;
+	background: var(--neutral-color);
+	transition: 0.25s ease-out;
+	border-radius: 1rem;
+	font-size: 0.75rem;
+}
+
+.calendar .cell:hover {
+	// background: var(--bg-color);
+	background-color: #cc368482;
+	transition: 0.5s ease-out;
+	// transform: scale3d(1.1, 1.1, 1);
+}
+
+.calendar .selected {
+	// border-left: 10px solid transparent;
+	// border-image: linear-gradient(45deg, #a42167 0%, #53cbf1 40%);
+	background-color: #a52266;
+	border-image-slice: 1;
+	color: white;
+	font-weight: 600;
+	font-size: 0.875rem;
+}
+
+.calendar .row {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.calendar .row:last-child {
+	border-bottom: none;
+}
+
+.calendar .cell:last-child {
+	border-right: none;
+}
+
+.calendar .cell .circle {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	background: #f00;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+}
+
+.calendar .disabled {
+	color: var(--text-color-light);
+	pointer-events: none;
+}
+
+.calendar .cell .bg {
+	font-weight: 700;
+	line-height: 1;
+	color: var(--main-color);
+	opacity: 0;
+	font-size: 1rem;
+	position: absolute;
+	top: -0.2em;
+	right: -0.05em;
+	transition: 0.25s ease-out;
+	letter-spacing: -0.07em;
+}
+
+.calendar .cell:hover .bg,
+.calendar .selected .bg {
+	opacity: 0.05;
+	transition: 0.5s ease-in;
+}

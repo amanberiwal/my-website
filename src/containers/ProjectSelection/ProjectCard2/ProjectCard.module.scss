@@ -1,0 +1,44 @@
+.menuContainer {
+	border-radius: 20px;
+}
+
+.pointer {
+	cursor: pointer;
+	font-size: 0.875rem;
+	padding-top: 4px;
+}
+.pointer2 {
+	cursor: pointer;
+	font-size: 0.875rem;
+	padding-top: 4px;
+}
+
+.textContainer {
+	display: block;
+	width: 110px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 8px;
+	color: rgb(32, 32, 32);
+	font-weight: 300;
+	font-size: 0.75rem;
+}
+
+.teamSection {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 0.75rem;
+}
+.dividerElement {
+	margin-top: 5px;
+}
+.whoa {
+	margin-bottom: 0px;
+	font-weight: 600;
+	font-size: 0.875rem;
+	width: 110px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
