@@ -83,17 +83,17 @@ const SignIn: FC<SignInProps> = (props) => {
             {/* <span className={Styles.loginHeader}>Sign in</span> */}
 
 
-            <Grid container spacing={1} alignItems="flex-end" className={Styles.loginTop}>
+            <Grid container spacing={0} alignItems="flex-end" className={Styles.loginTop}>
 
               <span className={Styles.Subtitle} >
 
-                <Typography className={Styles.loginSubtitle} variant="h6">
+                <Typography className={Styles.loginSubtitle} variant="subtitle1">
                   Sign in
                 </Typography>
 
-                <Typography className={Styles.loginSubtitle1} variant="h6">
+                {/* <Typography className={Styles.loginSubtitle1} variant="subtitle1">
                   or request access
-                </Typography>
+                </Typography> */}
 
               </span>
 

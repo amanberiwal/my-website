@@ -34,11 +34,16 @@
 	margin-top: 5px;
 }
 .whoa {
-	margin-bottom: 0px;
+	// margin-bottom: 0px;
 	font-weight: 600;
 	font-size: 0.875rem;
 	width: 110px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.text{
+	width: 30px;
+	height: 30px;
 }

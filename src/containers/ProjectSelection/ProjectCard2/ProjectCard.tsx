@@ -206,7 +206,11 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
 						<AvatarGroup spacing={-5}>
 							{teamArray &&
 								teamArray.map((user) => (
-									<Avatar src={user.profilePicture} key={user.userId}></Avatar>
+									<Avatar
+									src={user.profilePicture}
+									key={user.userId}
+									className={Styles.text}
+									></Avatar>
 								))}
 						</AvatarGroup>
 					</Grid>
